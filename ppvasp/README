@@ -1,0 +1,19 @@
+
+ a post process code for VASP calculation
+
+ meshband
+
+ proj
+
+ three fermi energies
+ scf dos band
+
+ 1. read total dos
+ 2. read projected dos
+ 3. read line mode bands
+ 4. read mesh mode bands
+    could be a non-xy-plane mesh in 3D BZ
+
+ 5. read projected bands
+
+

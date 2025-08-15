@@ -67,22 +67,23 @@ A **MATLAB** toolbox for constructing and analyzing tight-binding models, with d
 **Step 1: DFT → Wannier**
 ```bash
 cd dft-wannier
-bash run_all.sh
+bash job_relax_band_dos.sh
 ```
+The script performs relaxation, SCF, band-structure calculation, and Wannier90 projection consecutively.
 
 **Step 2: Post-Processing**
 ```bash
 cd ppvasp
 make
-./band.x
-./dos.x
 ```
+After compilation the executables for band, DOS, 3D band, and fat-band analysis are available in the same directory.
 
 **Step 3: Tight-Binding + HFMF**
 ```matlab
 cd TB-HFMF
 run main_tb_hfmf.m
 ```
+The `TB-HFMF` directory contains MATLAB scripts for constructing tight-binding models, visualizing bands, and solving HFMF equations. It can import Wannier functions through the `+MTB` interface to Wannier90.
 
 ---
 
